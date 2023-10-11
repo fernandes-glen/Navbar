@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+}
+
+nav .title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* so when we are on a spefic link we want that link to be highlighted */
+/* so router dom provides a predefined class which can make this
+and we do it uisng navLink  and apply a predefned .active class to it   */
+.active {
+  background-color: #1d4ed8;
+}
+
+/* and we also want to get highlighted when hovering over that link 
+ */
+
+nav ul li a:not(.active):hover {
+  background-color: #172554;
+}
+
+/* above psuedo selector logic */
+/* apply the style if the ele doesnt have .active class */
+
+/* css to make navbar sticky to the page  */
+nav {
+  position: sticky;
+  top: 0;
+}
