@@ -5,7 +5,9 @@ function Navbar() {
   return (
     <nav>
       {/* "/" specfies root and takes us to the main path  */}
-      <Link to="/">Website </Link>
+      <Link to="/" className="title">
+        Website
+      </Link>
       <ul>
         <li>
           {/* here link tag specfies that we need to create a link and  to specfies where we need to go  */}
